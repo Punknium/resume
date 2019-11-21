@@ -7,7 +7,7 @@
  *
 -->
 <template>
-  <div class="container mx-auto min-h-screen p-4 bg-gray-200">
+  <div class="container mx-auto min-h-screen text-sm p-4 shadow-md bg-gray-100">
     <slot></slot>
   </div>
 </template>
@@ -15,8 +15,13 @@
 <script>
 export default {
   name: 'Container',
+  computed: {
+  },
 }
 </script>
 
-<style scoped>
+<style>
+body {
+  @apply bg-gray-300;
+}
 </style>
